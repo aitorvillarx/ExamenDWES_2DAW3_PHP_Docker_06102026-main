@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Examen de Desarrollo web en entorno servidor</title>
+        <link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="../imagenes/favicon.jpeg">
+    </head>
+    <body>
+        <h1>Centro de Ayuda al Empleo</h1>
+        <h2>Formulario de solicitud</h2>
+        <button onclick="location.href='../php/tabla.php?tipo=soldadura'">Soldadura</button>
+        <button onclick="location.href='../php/tabla.php?tipo=informatica'">Informática</button>
+        <button onclick="location.href='../php/tabla.php?tipo=socio'">Asistencia Sociosanitaria</button>
+        <form action="../php/tabla.php" method="post">
+            <!-- Datos personales de la persona solicitante -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" maxlength="100" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" maxlength="150" required>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" maxlength="15" required>
+
+            <label for="f_nac">Fecha de nacimiento:</label>
+            <input type="date" id="f_nac" name="f_nac" required>
+
+            <label for="tlf">Teléfono:</label>
+            <input type="tel" id="tlf" name="tlf" maxlength="20" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" maxlength="150" required>
+
+            <!-- Solo se puede elegir una profesión -->
+            <p><strong>Profesión estudiada:</strong></p>
+            <label>
+                <input type="radio" name="profesion" value="soldadura" required>
+                Soldadura
+            </label>
+            <label>
+                <input type="radio" name="profesion" value="informatica">
+                Informática
+            </label>
+            <label>
+                <input type="radio" name="profesion" value="socio">
+                Asistencia sociosanitaria
+            </label>
+
+            <!-- Solo se puede elegir una jornada -->
+            <p><strong>Tipo de jornada:</strong></p>
+            <label>
+                <input type="radio" name="jornadaParcial" value="1" required>
+                Parcial
+            </label>
+            <label>
+                <input type="radio" name="jornadaParcial" value="0">
+                Completa
+            </label>
+
+            <!-- Los idiomas son opcionales y se pueden marcar los dos -->
+            <p><strong>Idiomas:</strong></p>
+            <label>
+                <input type="checkbox" name="idiomas[]" value="Euskera">
+                Euskera
+            </label>
+            <label>
+                <input type="checkbox" name="idiomas[]" value="Inglés">
+                Inglés
+            </label>
+
+            <input type="submit" value="Enviar solicitud">
+        </form>
+    </body>
+</html>

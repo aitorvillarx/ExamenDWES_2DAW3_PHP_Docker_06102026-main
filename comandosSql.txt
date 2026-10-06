@@ -1,0 +1,19 @@
+-- Ejecuta estos comandos en phpMyAdmin o en la consola MySQL de XAMPP.
+CREATE DATABASE CAE
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_spanish_ci;
+
+USE CAE;
+
+CREATE TABLE SOLICITUD (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    apellidos VARCHAR(150) NOT NULL,
+    dni VARCHAR(15) NOT NULL,
+    f_nac DATE NOT NULL,
+    tlf VARCHAR(20) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    profesion VARCHAR(40) NOT NULL,
+    jornadaParcial TINYINT(1) NOT NULL,
+    idiomas VARCHAR(100) NOT NULL
+);

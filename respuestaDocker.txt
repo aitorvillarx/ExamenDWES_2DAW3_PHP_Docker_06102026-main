@@ -1,0 +1,12 @@
+El comando `docker run -d --name mi_web -p 8080:80 nginx` crea e inicia un contenedor a partir de la imagen `nginx`.
+
+- `docker run`: crea un contenedor nuevo y lo inicia.
+- `-d`: lo ejecuta en segundo plano (modo *detached*), así la terminal queda disponible.
+- `--name mi_web`: asigna al contenedor el nombre `mi_web`, para poder identificarlo fácilmente.
+- `-p 8080:80`: publica el puerto 80 del contenedor en el puerto 8080 del ordenador. Se puede abrir la página con `http://localhost:8080`.
+- `nginx`: indica la imagen que Docker usará para crear el contenedor; si no está descargada, Docker intenta descargarla.
+
+Fuentes:
+- Docker Docs, `docker container run`: https://docs.docker.com/reference/cli/docker/container/run/
+- Docker Docs, publicación de puertos: https://docs.docker.com/engine/network/#published-ports
+- Docker Hub, imagen oficial de NGINX: https://hub.docker.com/_/nginx

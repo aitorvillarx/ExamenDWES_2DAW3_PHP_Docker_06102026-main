@@ -1,0 +1,105 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f8;
+    color: #4a3a40;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    color: #c2185b;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #ad1457;
+    border-bottom: 3px solid #f8bbd0;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
+form {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(194, 24, 91, 0.15);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #880e4f;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+input, select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid #f8bbd0;
+    border-radius: 6px;
+    background-color: #fffafb;
+    color: #4a3a40;
+    font-size: 15px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #ec407a;
+    background-color: #ffffff;
+}
+
+button,input[type="submit"], input[type="button"] {
+    background-color: #ec407a;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover,input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #c2185b;
+    transform: translateY(-2px);
+}
+
+button:active, input[type="submit"]:active, input[type="button"]:active {
+    transform: translateY(0);
+}
+
+table { 
+    width: 80%; 
+    margin: 30px auto; 
+    border-collapse: collapse; 
+    background-color: white; 
+} 
+
+th { 
+    background-color: #ec407a; 
+    color: white; 
+    padding: 12px; 
+    border: 1px solid #c2185b; 
+}
+
+td { 
+    padding: 10px; 
+    border: 1px solid #f8bbd0; 
+} 
+
+tr:nth-child(even) { 
+    background-color: #fff0f5; 
+} 
+tr:nth-child(odd) { 
+    background-color: white; 
+} 
